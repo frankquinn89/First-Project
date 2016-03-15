@@ -1,0 +1,18 @@
+body {
+    background-image: url("pink.jpg");
+
+}
+ 
+h1 { font-family: arial;color :white }
+
+p { font-size: 18px ; color: white}
+
+h2 { color: black} 
+
+#para1 {font-size: 22px; color:magenta}
+
+li {
+    display: inline;
+}
+
+h2{ color: blue}

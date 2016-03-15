@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+	<link href="Css.css" type="text/css" rel="stylesheet"/>
+	<title> Login </title>
+	<meta http-equiv = "content-type" content="text/html, charset=ut8"/>
+
+	<style>
+	
+body {
+    background-image: url("white.jpg");
+}
+	</style>
+	
+</head>
+
+<body>
+	
+	<center>
+
+	<img src=logo.jpg>				<!-- University Logo on page -->
+	
+	
+	
+	<!-- JavaScript -->
+	<script>									<!-- Hugh Moran gave me a hand with this code-->
+			function pasuser(form) {
+			if (form.usr.value=="admin") { 						<!-- Identify username -->
+			if (form.pword.value=="admin1234") {              	<!-- Identify password -->
+			location="main.html" 								<!-- if correct, go to main page -->
+			} else {													
+			alert("Invalid Password")							<!-- if wrong, give error message and deny access-->
+			}
+			} else {  alert("Invalid UserID")
+			}
+			}
+		</script>
+
+		
+		<!--forms -->
+		<form action="main.html" method="get" id="main.html">
+		<br><br>
+		Username:<input type ='text' name='usr' > 
+		<br><br>
+		Password:<input type ='password' name='pword'>
+		<br><br>
+		<input  type="button" value="Login" onClick="pasuser(this.form)"/>  <!-- Activates JavaScript -->
+		
+		</center>
+		
+		
+		</body>
+		</html>
+
